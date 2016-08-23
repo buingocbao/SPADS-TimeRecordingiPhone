@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="vXZ-lx-hvc" customClass="LoginViewController" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MG8-OU-QsK" customClass="MKTextField" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="172" y="130" width="256" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KKR-ez-mZr"/>
+                                    <constraint firstAttribute="width" constant="256" id="zIw-Xl-pbo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qu7-M8-YPs" customClass="MKTextField" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="172" y="190" width="256" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OdC-zE-tFe"/>
+                                    <constraint firstAttribute="width" constant="256" id="pm8-5T-h5i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpadsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BgV-2N-n5S">
+                                <rect key="frame" x="250" y="20" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3JJ-zI-xpR"/>
+                                    <constraint firstAttribute="width" constant="100" id="pej-Aj-YOL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XC-IH-Tte" customClass="MKButton" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="172" y="260" width="80" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.73333333329999995" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="b3K-fE-DoY"/>
+                                    <constraint firstAttribute="height" constant="80" id="rUT-Fw-osJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FO2-YB-epa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SH2-8g-fPa" customClass="MKButton" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="348" y="260" width="80" height="80"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.29191831540000002" green="0.66287701960000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3Ol-nv-FiB"/>
+                                    <constraint firstAttribute="height" constant="80" id="BGq-1t-hlM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="R">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btRegister:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s3D-Uq-9JU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZB-R9-JyW" customClass="MKButton" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="194" y="350" width="213" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="OxV-w8-xp9"/>
+                                    <constraint firstAttribute="height" constant="40" id="e7I-UZ-2wI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Forgot your password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btForget:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aBT-zO-6zj"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-84-cd2">
+                                <rect key="frame" x="281" y="281" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="MG8-OU-QsK" secondAttribute="centerX" id="4D4-N6-2Pn"/>
+                            <constraint firstItem="9XC-IH-Tte" firstAttribute="top" secondItem="Qu7-M8-YPs" secondAttribute="bottom" constant="20" id="Aoz-Rc-Jle"/>
+                            <constraint firstItem="9XC-IH-Tte" firstAttribute="centerY" secondItem="SH2-8g-fPa" secondAttribute="centerY" id="Dk7-dy-nCc"/>
+                            <constraint firstItem="DZB-R9-JyW" firstAttribute="top" secondItem="9XC-IH-Tte" secondAttribute="bottom" constant="10" id="Edf-mq-y6a"/>
+                            <constraint firstItem="BgV-2N-n5S" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="GIq-CF-7fq"/>
+                            <constraint firstAttribute="centerX" secondItem="DZB-R9-JyW" secondAttribute="centerX" id="Jiu-g1-7Qv"/>
+                            <constraint firstItem="Qu7-M8-YPs" firstAttribute="leading" secondItem="9XC-IH-Tte" secondAttribute="leading" id="Ks9-2O-FVz"/>
+                            <constraint firstItem="SH2-8g-fPa" firstAttribute="top" secondItem="Qu7-M8-YPs" secondAttribute="bottom" constant="20" id="NTv-7I-hIi"/>
+                            <constraint firstItem="Qu7-M8-YPs" firstAttribute="top" secondItem="MG8-OU-QsK" secondAttribute="bottom" constant="10" id="UCm-T2-tEv"/>
+                            <constraint firstItem="SH2-8g-fPa" firstAttribute="trailing" secondItem="Qu7-M8-YPs" secondAttribute="trailing" id="Ud5-7c-NXj"/>
+                            <constraint firstAttribute="centerX" secondItem="Qu7-M8-YPs" secondAttribute="centerX" id="YEK-Dy-kJB"/>
+                            <constraint firstItem="9XC-IH-Tte" firstAttribute="centerY" secondItem="3AZ-84-cd2" secondAttribute="centerY" id="YER-I3-hX8"/>
+                            <constraint firstAttribute="centerX" secondItem="MG8-OU-QsK" secondAttribute="centerX" id="cPN-vM-5S2"/>
+                            <constraint firstItem="MG8-OU-QsK" firstAttribute="top" secondItem="BgV-2N-n5S" secondAttribute="bottom" constant="10" id="dK7-lF-0VD"/>
+                            <constraint firstAttribute="centerX" secondItem="BgV-2N-n5S" secondAttribute="centerX" id="dVk-e4-FIC"/>
+                            <constraint firstAttribute="centerX" secondItem="3AZ-84-cd2" secondAttribute="centerX" id="eTL-3T-MCr"/>
+                            <constraint firstAttribute="centerX" secondItem="MG8-OU-QsK" secondAttribute="centerX" id="fSH-7w-3K9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="3AZ-84-cd2" id="CaU-cZ-XKY"/>
+                        <outlet property="btForget" destination="DZB-R9-JyW" id="bU0-YK-eG3"/>
+                        <outlet property="btLogin" destination="9XC-IH-Tte" id="eHQ-2S-nBe"/>
+                        <outlet property="btRegister" destination="SH2-8g-fPa" id="A3Z-Gy-ySR"/>
+                        <outlet property="tfAccount" destination="MG8-OU-QsK" id="ivJ-DA-kQv"/>
+                        <outlet property="tfPassword" destination="Qu7-M8-YPs" id="kJJ-F5-tNq"/>
+                        <segue destination="nHc-dI-6cY" kind="show" identifier="LoginSegue" id="ha4-U0-lOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-573" y="397"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Sek-RR-6Wg">
+            <objects>
+                <tabBarController id="nHc-dI-6cY" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JCi-BR-Z4K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yjh-ED-kta" kind="relationship" relationship="viewControllers" id="55D-81-zp3"/>
+                        <segue destination="Foo-av-zTW" kind="relationship" relationship="viewControllers" id="Ud1-xJ-UHd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8M-eT-3Rz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="397"/>
+        </scene>
+        <!--Recording-->
+        <scene sceneID="Udy-JM-Bfw">
+            <objects>
+                <viewController id="yjh-ED-kta" customClass="RecordingViewController" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aEl-0y-vhY"/>
+                        <viewControllerLayoutGuide type="bottom" id="R6F-bo-8r5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIZ-KY-Aeu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpadsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="REX-dT-2hr">
+                                <rect key="frame" x="250" y="30" width="100" height="100"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xpa-Of-STT"/>
+                                    <constraint firstAttribute="height" constant="100" id="zqs-0J-dyN"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="c8o-65-85m">
+                                <rect key="frame" x="281" y="281" width="37" height="37"/>
+                                <animations/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7az-qR-7Xo" customClass="MKButton" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="315" y="491" width="150" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XRl-uG-dpC"/>
+                                    <constraint firstAttribute="width" constant="150" id="qjw-Pn-KY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="END">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btEndEvent:" destination="yjh-ED-kta" eventType="touchUpInside" id="vt5-hG-MbQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWo-tq-zfn" customClass="MKButton" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="135" y="491" width="150" height="50"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pOl-Kd-2NA"/>
+                                    <constraint firstAttribute="width" constant="150" id="tHO-wS-HFQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btStartEvent:" destination="yjh-ED-kta" eventType="touchUpInside" id="A7T-Eh-enF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ABC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6u-Ae-TgA">
+                                <rect key="frame" x="283" y="290" width="36" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="REX-dT-2hr" firstAttribute="top" secondItem="aEl-0y-vhY" secondAttribute="bottom" constant="10" id="0jR-Kw-yqL"/>
+                            <constraint firstAttribute="centerX" secondItem="c8o-65-85m" secondAttribute="centerX" id="0oV-49-04O"/>
+                            <constraint firstAttribute="centerX" secondItem="YWo-tq-zfn" secondAttribute="centerX" constant="90" id="8MA-DG-at0"/>
+                            <constraint firstAttribute="centerX" secondItem="7az-qR-7Xo" secondAttribute="centerX" constant="-90" id="8yk-BK-n4L"/>
+                            <constraint firstAttribute="centerX" secondItem="b6u-Ae-TgA" secondAttribute="centerX" id="9rr-2H-v5D"/>
+                            <constraint firstItem="R6F-bo-8r5" firstAttribute="top" secondItem="7az-qR-7Xo" secondAttribute="bottom" constant="10" id="NQd-Sb-bG4"/>
+                            <constraint firstAttribute="centerX" secondItem="REX-dT-2hr" secondAttribute="centerX" id="Wae-Dl-zF3"/>
+                            <constraint firstAttribute="centerY" secondItem="c8o-65-85m" secondAttribute="centerY" id="bxQ-7n-vht"/>
+                            <constraint firstAttribute="centerY" secondItem="b6u-Ae-TgA" secondAttribute="centerY" id="pcP-Cv-JYW"/>
+                            <constraint firstItem="R6F-bo-8r5" firstAttribute="top" secondItem="YWo-tq-zfn" secondAttribute="bottom" constant="10" id="yZv-Fd-7Ly"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Recording" id="Wng-CA-mer"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="c8o-65-85m" id="2Yy-xK-K28"/>
+                        <outlet property="btEnd" destination="7az-qR-7Xo" id="jNP-IL-dpO"/>
+                        <outlet property="btStart" destination="YWo-tq-zfn" id="6ey-dA-pbI"/>
+                        <outlet property="lbBeacon" destination="b6u-Ae-TgA" id="30o-bw-Ek3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HzT-dh-ISO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="-25"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="Peh-jG-m7k">
+            <objects>
+                <viewController id="Foo-av-zTW" customClass="InfoViewController" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qUg-NM-uGt"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yri-Qy-gh3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cbG-WQ-YqO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHO-49-dfF" customClass="MKButton" customModule="SPADS_TimeRecordingiPhone" customModuleProvider="target">
+                                <rect key="frame" x="371" y="20" width="213" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="CJP-fx-CU8"/>
+                                    <constraint firstAttribute="height" constant="40" id="ozR-79-TH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btForget:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SVy-l6-fhe"/>
+                                    <action selector="btLogoutEvent:" destination="Foo-av-zTW" eventType="touchUpInside" id="Lub-0i-BXJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BHO-49-dfF" firstAttribute="trailing" secondItem="cbG-WQ-YqO" secondAttribute="trailingMargin" id="dt5-Vs-wos"/>
+                            <constraint firstItem="BHO-49-dfF" firstAttribute="top" secondItem="qUg-NM-uGt" secondAttribute="bottom" id="l46-Mx-dzT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Information" id="S4g-Zl-9pq"/>
+                    <connections>
+                        <outlet property="btLogout" destination="BHO-49-dfF" id="36i-nW-gQq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4j-62-1rX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="664"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SpadsLogo" width="300" height="300"/>
+    </resources>
+</document>

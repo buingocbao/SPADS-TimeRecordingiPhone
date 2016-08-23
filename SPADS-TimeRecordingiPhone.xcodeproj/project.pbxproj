@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5C632F11B635CC9002516D6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C632F01B635CC9002516D6 /* InfoViewController.swift */; };
+		B5F8B1E21B4E173E0074F209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B1E11B4E173E0074F209 /* AppDelegate.swift */; };
+		B5F8B1E71B4E173E0074F209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F8B1E51B4E173E0074F209 /* Main.storyboard */; };
+		B5F8B1E91B4E173E0074F209 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F8B1E81B4E173E0074F209 /* Images.xcassets */; };
+		B5F8B1EC1B4E173E0074F209 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F8B1EA1B4E173E0074F209 /* LaunchScreen.xib */; };
+		B5F8B1F81B4E173E0074F209 /* SPADS_TimeRecordingiPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B1F71B4E173E0074F209 /* SPADS_TimeRecordingiPhoneTests.swift */; };
+		B5F8B2201B4E1C100074F209 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B21F1B4E1C100074F209 /* LoginViewController.swift */; };
+		B5F8B2311B4E1FB90074F209 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B22A1B4E1FB90074F209 /* MKButton.swift */; };
+		B5F8B2321B4E1FB90074F209 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B22B1B4E1FB90074F209 /* MKColor.swift */; };
+		B5F8B2331B4E1FB90074F209 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B22C1B4E1FB90074F209 /* MKImageView.swift */; };
+		B5F8B2341B4E1FB90074F209 /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B22D1B4E1FB90074F209 /* MKLabel.swift */; };
+		B5F8B2351B4E1FB90074F209 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B22E1B4E1FB90074F209 /* MKLayer.swift */; };
+		B5F8B2361B4E1FB90074F209 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B22F1B4E1FB90074F209 /* MKTableViewCell.swift */; };
+		B5F8B2371B4E1FB90074F209 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B2301B4E1FB90074F209 /* MKTextField.swift */; };
+		B5F8B23F1B4E23130074F209 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2391B4E23130074F209 /* Bolts.framework */; };
+		B5F8B2401B4E23130074F209 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B23A1B4E23130074F209 /* Parse.framework */; };
+		B5F8B2411B4E23130074F209 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B23B1B4E23130074F209 /* ParseCrashReporting.framework */; };
+		B5F8B2421B4E23130074F209 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B23C1B4E23130074F209 /* ParseFacebookUtils.framework */; };
+		B5F8B2431B4E23130074F209 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B23D1B4E23130074F209 /* ParseFacebookUtilsV4.framework */; };
+		B5F8B2441B4E23130074F209 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B23E1B4E23130074F209 /* ParseUI.framework */; };
+		B5F8B2491B4E23E00074F209 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2481B4E23E00074F209 /* AudioToolbox.framework */; };
+		B5F8B24B1B4E23E50074F209 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B24A1B4E23E50074F209 /* CFNetwork.framework */; };
+		B5F8B24D1B4E23E90074F209 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B24C1B4E23E90074F209 /* CoreGraphics.framework */; };
+		B5F8B24F1B4E23ED0074F209 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B24E1B4E23ED0074F209 /* CoreLocation.framework */; };
+		B5F8B2511B4E23F40074F209 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2501B4E23F40074F209 /* MobileCoreServices.framework */; };
+		B5F8B2531B4E23F90074F209 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2521B4E23F90074F209 /* QuartzCore.framework */; };
+		B5F8B2551B4E23FE0074F209 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2541B4E23FE0074F209 /* Security.framework */; };
+		B5F8B2571B4E24040074F209 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2561B4E24040074F209 /* StoreKit.framework */; };
+		B5F8B2591B4E240C0074F209 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B2581B4E240C0074F209 /* SystemConfiguration.framework */; };
+		B5F8B25B1B4E24110074F209 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B25A1B4E24110074F209 /* libz.dylib */; };
+		B5F8B25D1B4E24180074F209 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F8B25C1B4E24180074F209 /* libsqlite3.dylib */; };
+		B5F8B2621B4E5E040074F209 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F8B2611B4E5E040074F209 /* RecordingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5F8B1F21B4E173E0074F209 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5F8B1D41B4E173E0074F209 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5F8B1DB1B4E173E0074F209;
+			remoteInfo = "SPADS-TimeRecordingiPhone";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5C632F01B635CC9002516D6 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B5F8B1DC1B4E173E0074F209 /* SPADS-TimeRecordingiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPADS-TimeRecordingiPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F8B1E01B4E173E0074F209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F8B1E11B4E173E0074F209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5F8B1E61B4E173E0074F209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5F8B1E81B4E173E0074F209 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5F8B1EB1B4E173E0074F209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B5F8B1F11B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPADS-TimeRecordingiPhoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F8B1F61B4E173E0074F209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5F8B1F71B4E173E0074F209 /* SPADS_TimeRecordingiPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPADS_TimeRecordingiPhoneTests.swift; sourceTree = "<group>"; };
+		B5F8B21F1B4E1C100074F209 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B5F8B22A1B4E1FB90074F209 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
+		B5F8B22B1B4E1FB90074F209 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
+		B5F8B22C1B4E1FB90074F209 /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKImageView.swift; sourceTree = "<group>"; };
+		B5F8B22D1B4E1FB90074F209 /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLabel.swift; sourceTree = "<group>"; };
+		B5F8B22E1B4E1FB90074F209 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
+		B5F8B22F1B4E1FB90074F209 /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
+		B5F8B2301B4E1FB90074F209 /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
+		B5F8B2391B4E23130074F209 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B5F8B23A1B4E23130074F209 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B5F8B23B1B4E23130074F209 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		B5F8B23C1B4E23130074F209 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		B5F8B23D1B4E23130074F209 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		B5F8B23E1B4E23130074F209 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		B5F8B2451B4E239F0074F209 /* SPADS-TimeRecordingiPhone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPADS-TimeRecordingiPhone-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5F8B2481B4E23E00074F209 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B5F8B24A1B4E23E50074F209 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B5F8B24C1B4E23E90074F209 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5F8B24E1B4E23ED0074F209 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B5F8B2501B4E23F40074F209 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B5F8B2521B4E23F90074F209 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B5F8B2541B4E23FE0074F209 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B5F8B2561B4E24040074F209 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B5F8B2581B4E240C0074F209 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5F8B25A1B4E24110074F209 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B5F8B25C1B4E24180074F209 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B5F8B2611B4E5E040074F209 /* RecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5F8B1D91B4E173E0074F209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F8B25D1B4E24180074F209 /* libsqlite3.dylib in Frameworks */,
+				B5F8B25B1B4E24110074F209 /* libz.dylib in Frameworks */,
+				B5F8B2591B4E240C0074F209 /* SystemConfiguration.framework in Frameworks */,
+				B5F8B2571B4E24040074F209 /* StoreKit.framework in Frameworks */,
+				B5F8B2551B4E23FE0074F209 /* Security.framework in Frameworks */,
+				B5F8B2531B4E23F90074F209 /* QuartzCore.framework in Frameworks */,
+				B5F8B2511B4E23F40074F209 /* MobileCoreServices.framework in Frameworks */,
+				B5F8B24F1B4E23ED0074F209 /* CoreLocation.framework in Frameworks */,
+				B5F8B24D1B4E23E90074F209 /* CoreGraphics.framework in Frameworks */,
+				B5F8B24B1B4E23E50074F209 /* CFNetwork.framework in Frameworks */,
+				B5F8B2491B4E23E00074F209 /* AudioToolbox.framework in Frameworks */,
+				B5F8B2441B4E23130074F209 /* ParseUI.framework in Frameworks */,
+				B5F8B2401B4E23130074F209 /* Parse.framework in Frameworks */,
+				B5F8B2411B4E23130074F209 /* ParseCrashReporting.framework in Frameworks */,
+				B5F8B2421B4E23130074F209 /* ParseFacebookUtils.framework in Frameworks */,
+				B5F8B23F1B4E23130074F209 /* Bolts.framework in Frameworks */,
+				B5F8B2431B4E23130074F209 /* ParseFacebookUtilsV4.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F8B1EE1B4E173E0074F209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5F8B1D31B4E173E0074F209 = {
+			isa = PBXGroup;
+			children = (
+				B5F8B25E1B4E242B0074F209 /* Frameworks */,
+				B5F8B1DE1B4E173E0074F209 /* SPADS-TimeRecordingiPhone */,
+				B5F8B1F41B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests */,
+				B5F8B1DD1B4E173E0074F209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5F8B1DD1B4E173E0074F209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B1DC1B4E173E0074F209 /* SPADS-TimeRecordingiPhone.app */,
+				B5F8B1F11B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5F8B1DE1B4E173E0074F209 /* SPADS-TimeRecordingiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B2611B4E5E040074F209 /* RecordingViewController.swift */,
+				B5F8B21F1B4E1C100074F209 /* LoginViewController.swift */,
+				B5C632F01B635CC9002516D6 /* InfoViewController.swift */,
+				B5F8B1E11B4E173E0074F209 /* AppDelegate.swift */,
+				B5F8B1E51B4E173E0074F209 /* Main.storyboard */,
+				B5F8B1E81B4E173E0074F209 /* Images.xcassets */,
+				B5F8B1EA1B4E173E0074F209 /* LaunchScreen.xib */,
+				B5F8B1DF1B4E173E0074F209 /* Supporting Files */,
+				B5F8B2451B4E239F0074F209 /* SPADS-TimeRecordingiPhone-Bridging-Header.h */,
+			);
+			path = "SPADS-TimeRecordingiPhone";
+			sourceTree = "<group>";
+		};
+		B5F8B1DF1B4E173E0074F209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B2381B4E23030074F209 /* Parse */,
+				B5F8B2291B4E1FB90074F209 /* Material Design */,
+				B5F8B1E01B4E173E0074F209 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5F8B1F41B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B1F71B4E173E0074F209 /* SPADS_TimeRecordingiPhoneTests.swift */,
+				B5F8B1F51B4E173E0074F209 /* Supporting Files */,
+			);
+			path = "SPADS-TimeRecordingiPhoneTests";
+			sourceTree = "<group>";
+		};
+		B5F8B1F51B4E173E0074F209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B1F61B4E173E0074F209 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5F8B2291B4E1FB90074F209 /* Material Design */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B22A1B4E1FB90074F209 /* MKButton.swift */,
+				B5F8B22B1B4E1FB90074F209 /* MKColor.swift */,
+				B5F8B22C1B4E1FB90074F209 /* MKImageView.swift */,
+				B5F8B22D1B4E1FB90074F209 /* MKLabel.swift */,
+				B5F8B22E1B4E1FB90074F209 /* MKLayer.swift */,
+				B5F8B22F1B4E1FB90074F209 /* MKTableViewCell.swift */,
+				B5F8B2301B4E1FB90074F209 /* MKTextField.swift */,
+			);
+			path = "Material Design";
+			sourceTree = "<group>";
+		};
+		B5F8B2381B4E23030074F209 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B2391B4E23130074F209 /* Bolts.framework */,
+				B5F8B23A1B4E23130074F209 /* Parse.framework */,
+				B5F8B23B1B4E23130074F209 /* ParseCrashReporting.framework */,
+				B5F8B23C1B4E23130074F209 /* ParseFacebookUtils.framework */,
+				B5F8B23D1B4E23130074F209 /* ParseFacebookUtilsV4.framework */,
+				B5F8B23E1B4E23130074F209 /* ParseUI.framework */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
+		B5F8B25E1B4E242B0074F209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5F8B25C1B4E24180074F209 /* libsqlite3.dylib */,
+				B5F8B25A1B4E24110074F209 /* libz.dylib */,
+				B5F8B2581B4E240C0074F209 /* SystemConfiguration.framework */,
+				B5F8B2561B4E24040074F209 /* StoreKit.framework */,
+				B5F8B2541B4E23FE0074F209 /* Security.framework */,
+				B5F8B2521B4E23F90074F209 /* QuartzCore.framework */,
+				B5F8B2501B4E23F40074F209 /* MobileCoreServices.framework */,
+				B5F8B24E1B4E23ED0074F209 /* CoreLocation.framework */,
+				B5F8B24C1B4E23E90074F209 /* CoreGraphics.framework */,
+				B5F8B24A1B4E23E50074F209 /* CFNetwork.framework */,
+				B5F8B2481B4E23E00074F209 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5F8B1DB1B4E173E0074F209 /* SPADS-TimeRecordingiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F8B1FB1B4E173E0074F209 /* Build configuration list for PBXNativeTarget "SPADS-TimeRecordingiPhone" */;
+			buildPhases = (
+				B5F8B1D81B4E173E0074F209 /* Sources */,
+				B5F8B1D91B4E173E0074F209 /* Frameworks */,
+				B5F8B1DA1B4E173E0074F209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SPADS-TimeRecordingiPhone";
+			productName = "SPADS-TimeRecordingiPhone";
+			productReference = B5F8B1DC1B4E173E0074F209 /* SPADS-TimeRecordingiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5F8B1F01B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F8B1FE1B4E173E0074F209 /* Build configuration list for PBXNativeTarget "SPADS-TimeRecordingiPhoneTests" */;
+			buildPhases = (
+				B5F8B1ED1B4E173E0074F209 /* Sources */,
+				B5F8B1EE1B4E173E0074F209 /* Frameworks */,
+				B5F8B1EF1B4E173E0074F209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5F8B1F31B4E173E0074F209 /* PBXTargetDependency */,
+			);
+			name = "SPADS-TimeRecordingiPhoneTests";
+			productName = "SPADS-TimeRecordingiPhoneTests";
+			productReference = B5F8B1F11B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5F8B1D41B4E173E0074F209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = buingocbao;
+				TargetAttributes = {
+					B5F8B1DB1B4E173E0074F209 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = SHG5N79L37;
+					};
+					B5F8B1F01B4E173E0074F209 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B5F8B1DB1B4E173E0074F209;
+					};
+				};
+			};
+			buildConfigurationList = B5F8B1D71B4E173E0074F209 /* Build configuration list for PBXProject "SPADS-TimeRecordingiPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5F8B1D31B4E173E0074F209;
+			productRefGroup = B5F8B1DD1B4E173E0074F209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5F8B1DB1B4E173E0074F209 /* SPADS-TimeRecordingiPhone */,
+				B5F8B1F01B4E173E0074F209 /* SPADS-TimeRecordingiPhoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5F8B1DA1B4E173E0074F209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F8B1E71B4E173E0074F209 /* Main.storyboard in Resources */,
+				B5F8B1EC1B4E173E0074F209 /* LaunchScreen.xib in Resources */,
+				B5F8B1E91B4E173E0074F209 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F8B1EF1B4E173E0074F209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5F8B1D81B4E173E0074F209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F8B2371B4E1FB90074F209 /* MKTextField.swift in Sources */,
+				B5C632F11B635CC9002516D6 /* InfoViewController.swift in Sources */,
+				B5F8B2341B4E1FB90074F209 /* MKLabel.swift in Sources */,
+				B5F8B2311B4E1FB90074F209 /* MKButton.swift in Sources */,
+				B5F8B2331B4E1FB90074F209 /* MKImageView.swift in Sources */,
+				B5F8B2361B4E1FB90074F209 /* MKTableViewCell.swift in Sources */,
+				B5F8B2351B4E1FB90074F209 /* MKLayer.swift in Sources */,
+				B5F8B2621B4E5E040074F209 /* RecordingViewController.swift in Sources */,
+				B5F8B2201B4E1C100074F209 /* LoginViewController.swift in Sources */,
+				B5F8B1E21B4E173E0074F209 /* AppDelegate.swift in Sources */,
+				B5F8B2321B4E1FB90074F209 /* MKColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5F8B1ED1B4E173E0074F209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F8B1F81B4E173E0074F209 /* SPADS_TimeRecordingiPhoneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5F8B1F31B4E173E0074F209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5F8B1DB1B4E173E0074F209 /* SPADS-TimeRecordingiPhone */;
+			targetProxy = B5F8B1F21B4E173E0074F209 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5F8B1E51B4E173E0074F209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F8B1E61B4E173E0074F209 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5F8B1EA1B4E173E0074F209 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5F8B1EB1B4E173E0074F209 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5F8B1F91B4E173E0074F209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5F8B1FA1B4E173E0074F209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5F8B1FC1B4E173E0074F209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPADS-TimeRecordingiPhone",
+				);
+				INFOPLIST_FILE = "SPADS-TimeRecordingiPhone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPADS-TimeRecordingiPhone/SPADS-TimeRecordingiPhone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5F8B1FD1B4E173E0074F209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPADS-TimeRecordingiPhone",
+				);
+				INFOPLIST_FILE = "SPADS-TimeRecordingiPhone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SPADS-TimeRecordingiPhone/SPADS-TimeRecordingiPhone-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B5F8B1FF1B4E173E0074F209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SPADS-TimeRecordingiPhoneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPADS-TimeRecordingiPhone.app/SPADS-TimeRecordingiPhone";
+			};
+			name = Debug;
+		};
+		B5F8B2001B4E173E0074F209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SPADS-TimeRecordingiPhoneTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPADS-TimeRecordingiPhone.app/SPADS-TimeRecordingiPhone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5F8B1D71B4E173E0074F209 /* Build configuration list for PBXProject "SPADS-TimeRecordingiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F8B1F91B4E173E0074F209 /* Debug */,
+				B5F8B1FA1B4E173E0074F209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F8B1FB1B4E173E0074F209 /* Build configuration list for PBXNativeTarget "SPADS-TimeRecordingiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F8B1FC1B4E173E0074F209 /* Debug */,
+				B5F8B1FD1B4E173E0074F209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F8B1FE1B4E173E0074F209 /* Build configuration list for PBXNativeTarget "SPADS-TimeRecordingiPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F8B1FF1B4E173E0074F209 /* Debug */,
+				B5F8B2001B4E173E0074F209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5F8B1D41B4E173E0074F209 /* Project object */;
+}
